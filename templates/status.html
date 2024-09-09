@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Your Progress</h2>
+<ul>
+    <li>OWASP Challenge: {{ 'Solved' if session.get('owasp') else 'Unsolved' }}</li>
+    <li>Mobile Challenge: {{ 'Solved' if session.get('mobile') else 'Unsolved' }}</li>
+    <li>Web Challenge: {{ 'Solved' if session.get('web') else 'Unsolved' }}</li>
+    <li>Crypto Challenge: {{ 'Solved' if session.get('crypto') else 'Unsolved' }}</li>
+    <li>DB Challenge: {{ 'Solved' if session.get('db') else 'Unsolved' }}</li>
+</ul>
+{% endblock %}

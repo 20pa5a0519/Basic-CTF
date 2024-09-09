@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ challenge_name }} Challenge</h2>
+<form method="POST">
+    <input type="text" name="flag" placeholder="Enter the flag">
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
